@@ -1,0 +1,1010 @@
+/*----------GLOBAL----------*/
+body{
+	background-color: black;
+	margin: 0%;
+	font-family: JoseT;
+	overflow-X: hidden;
+}
+
+@font-face{
+	font-family: JoseT;
+	src: url(../fonts/JosefinSans-Thin.ttf);
+}
+
+@font-face{
+	font-family: JoseL;
+	src: url(../fonts/JosefinSans-Light.ttf);
+}
+
+@font-face{
+	font-family: JoseR;
+	src: url(../fonts/JosefinSans-Regular.ttf);
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+  transition-duration: 0.8s;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+  transition-duration: 0.8s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: green;
+  text-shadow: 0px 0px 4px green;
+  transition-duration: 0.8s;
+}
+
+a:active {
+  text-decoration: none;
+  color: white;
+}
+
+ul{
+	overflow: hidden;
+	margin: 0% auto;
+}
+
+li{
+	padding: 0.5em;
+	display: inline-block;
+	color: white;
+	font-family: JoseL;
+	font-size: 2.5vmin;
+	text-align: left;
+}
+
+/*-------------------------*/
+
+
+/*----------ID's-----------*/
+
+#shadow{
+	margin: 2% 0 0 2%;
+	box-shadow: 1px 1px 8px 0px rgba(0, 255, 0, 0.2), 1px 1px 10px 0px rgba(255, 255, 255, 1);
+}
+
+#about-us{
+
+	justify-self: end;
+	align-self: end;
+}
+
+#about-us p{
+	margin-left: -5%;
+	display: inline-block;
+	font-family: JoseR;
+	font-size: 5vmin;
+	color: white;
+	text-transform: uppercase;
+	writing-mode: tb-rl;
+	transform: rotateZ(180deg);
+}
+
+#quote{
+	color: white;
+	text-align: center;
+	font-size: 5vmin;
+	font-family: JoseR;
+	line-height: 5vmin;
+}
+
+#description{
+	color: white;
+	text-align: center;
+	font-family: JoseT;
+	font-size: 2.2vmin;
+	padding: 2em 5em;
+}
+
+#strip{
+	width: 0.5em;
+	background-color: green;
+	justify-self: end;
+}
+
+#short-strip{
+  width: 10%;
+  background-color: green;
+}
+
+#author{
+	float: right;
+	margin-top: 0%;
+	margin-right: 5%;
+	font-size: 3vmin;
+	font-family: JoseT;
+}
+
+#social{
+	justify-self: end;
+}
+
+#dev{
+	letter-spacing: 0.4vmin;
+	padding-right: 0em;
+	color: white;
+	font-size: 2vmin;
+}
+
+
+/*-------------------------*/
+
+/*----------BACKGORUND IMAGES----------*/
+
+.land-page{
+	background: url('../images/solar-panels.jpg');
+	background-attachment: fixed;
+  background-position: center;
+}
+
+.page-2{
+	background: url('../images/use-solar.jpg');
+}
+
+.page-3{
+	background: url('../images/land3.jpg');
+	background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.page-4{
+  background: url('../images/contact.jpg');
+}
+/*------------------------------------*/
+
+
+/*----------TITLES----------*/
+.headline{
+	color: white;
+	font-size: 7vh;
+	padding-top: 2em;
+	font-family: JoseT;
+	text-align: center;
+	text-transform: none;
+}
+
+.glow{
+	line-height: 150%;
+	font-size: 10vmin;
+	font-family: JoseR; 
+	text-shadow: 0px 0px 10px white;
+	text-transform: none;
+}
+
+.title{
+	color: white;
+	font-family: JoseL;
+	font-size: 5vmin;
+	text-transform: uppercase;
+}
+
+.sub-title{
+	color: white;
+	font-family: JoseL;
+	font-size: 3vmin;
+	text-align: center;
+	text-transform: none;
+}
+
+.gap-10{
+	margin:5%;
+}
+.mar-0{
+	margin-bottom: 0%;
+}
+
+.mar-top-5{
+	margin-top: 5%
+}
+.mar-20{
+	margin-top: 20%;
+}
+/*--------------------------*/
+
+
+
+/*----------CLASSES----------*/
+
+.full-page{
+	background-size: cover;
+	height: 100vh;
+}
+
+.kontainer{
+  margin: 0%;
+	display: grid;
+	grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+}
+
+.tint{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0,0.3));
+	background-size: cover;
+	height: 100vh;
+}
+
+.tint2{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0,0.8));
+  background-size: cover;
+  height: 100vh;
+}
+
+
+.tint > img{
+	height: 10vh;
+}
+
+
+.btn{
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-family: JoseL;
+	font-size: 2.5vmin;
+	height: 5vmin;
+	width: 20vmin;
+	border: none;
+}
+
+.center-justify{
+	justify-self: center;
+}
+
+
+.showcase{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+	justify-self: center;
+}
+
+.showcase img{
+  justify-self: center;
+}
+
+.showcase-title{
+  justify-self: center;
+  color: white;
+  font-family: JoseL;
+  font-size: 2.5vmin;
+}
+
+.green-glow{
+	color: green; text-shadow: 0px 0px 2px green;
+}
+
+
+.grid-col-5 img{
+  height: 20vmin;
+}
+
+/*---------------------------*/
+
+/*----------GRIDS----------*/
+
+.grid-col-1{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.grid-col-3{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 10px;
+}
+
+.grid-col-5{
+  margin: 5% 0%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap-column: 10px;
+  grid-row-gap: 50px;
+}
+
+.list-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 20px;
+  grid-column-gap: 100px;
+}
+.grid-col-footer{
+	background-color: black;
+	display: grid;
+	grid-template-columns: 0.49fr 0.1fr 3fr 0.5fr;
+	grid-auto-rows: minmax(200px, auto);
+	margin-bottom: 3%;
+}
+
+.grid-social-3 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 50px;
+	grid-column-gap: 40px;
+}
+.grid-social-3 img{
+  margin-top: 30%;
+  height: 50px;
+  width: 50px;
+}
+
+/*---------------------------*/
+
+
+/*----------Contact Form----------*/
+.align-center {
+  text-align: center;
+}
+
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row .col {
+  padding: 0 20px;
+  float: left;
+  box-sizing: border-box;
+}
+
+.row .col.x-50 {
+  width: 50%;
+}
+
+.row .col.x-100 {
+  width: 100%;
+}
+
+.small{
+	width: 50%;
+}
+
+.get-in-touch .title {
+  padding-bottom: 5vmin;
+  text-align: center;
+  font-family: JoseT;
+  text-transform: uppercase;
+  letter-spacing: 23px;
+  font-size: 6vmin;
+  line-height: 48px;
+}
+
+.contact-form .form-field {
+  position: relative;
+  margin: 32px 0;
+}
+
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 3vmin;
+  border-width: 0 0 2px 0;
+  border-color: #000;
+  font-family: JoseT;
+  font-size: 2vmin;
+  line-height: 6vmin;
+  font-weight: 400;
+  background-color: transparent;
+  color: white;
+}
+
+.contact-form .input-text:focus {
+  outline: none;
+}
+
+.contact-form .input-text:focus + .label, .contact-form .input-text.not-empty + .label {
+
+  -webkit-transform: translateY(-1.5vmin);
+          transform: translateY(-1.5vmin);
+}
+
+.contact-form .label {
+  position: absolute;
+  left: 20px;
+  bottom: 5vmin;
+  font-family: JoseT;
+  font-size: 2.5vmin;
+  line-height: 0vmin;
+  color: white;
+  cursor: text;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #000;
+  width: 20vmin;
+  color: white;
+  padding-top: 0.5em;
+  /*text-shadow: 0px 0px 5px #fff;*/
+  text-transform: uppercase;
+  font-family: JoseT;
+  font-size: 2.5vmin;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10vmin;
+  transition-duration: 0.8s;
+}
+
+.btn:hover{
+  color: green;
+  text-shadow: 0px 0px 4px green;
+  transition-duration: 0.8s;
+}
+/*----------------------*/
+
+
+
+
+/*----------Hovering effect----------*/
+.hovicon {
+    display: inline-block;
+    cursor: pointer;
+    width: 20vmin;
+    height: 20vmin;
+    border-radius: 0%;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+    color: #fff;
+}
+
+.hovicon.auto-width {
+    width: auto;
+    height: auto;
+    padding: 15px;
+}
+.hovicon:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content:'';
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.hovicon:before {
+    speak: none;
+    font-size: 48px;
+    line-height: 90px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+}
+
+/*hovicon consultation beings*/
+.hovicon.effect-consult {
+    background-image: url('../png/consultation.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
+    -moz-transition: -moz-transform ease-out 0.1s, background 0.2s;
+    transition: transform ease-out 0.1s, background 0.2s;
+}
+.hovicon.effect-consult:after {
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: -1;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+.hovicon.effect-consult:hover {
+    -webkit-transform: scale(0.93);
+    -moz-transform: scale(0.93);
+    -ms-transform: scale(0.93);
+    transform: scale(0.93);
+}
+
+.hovicon.effect-consult:hover:after {
+    -webkit-animation: sonarEffect 1.3s ease-out 75ms;
+    -moz-animation: sonarEffect 1.3s ease-out 75ms;
+    animation: sonarEffect 1.3s ease-out 75ms;
+}
+/*----------end----------*/
+
+/*hovicon design begins*/
+
+.hovicon.effect-design {
+    background-image: url('../png/design.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
+    -moz-transition: -moz-transform ease-out 0.1s, background 0.2s;
+    transition: transform ease-out 0.1s, background 0.2s;
+}
+.hovicon.effect-design:after {
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: -1;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+.hovicon.effect-design:hover {
+    -webkit-transform: scale(0.93);
+    -moz-transform: scale(0.93);
+    -ms-transform: scale(0.93);
+    transform: scale(0.93);
+}
+
+.hovicon.effect-design:hover:after {
+    -webkit-animation: sonarEffect 1.3s ease-out 75ms;
+    -moz-animation: sonarEffect 1.3s ease-out 75ms;
+    animation: sonarEffect 1.3s ease-out 75ms;
+    text-decoration: none;
+}
+/*----------ed----------*/
+
+
+/*hovicon design begins*/
+
+.hovicon.effect-service {
+    background-image: url('../png/post-services.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
+    -moz-transition: -moz-transform ease-out 0.1s, background 0.2s;
+    transition: transform ease-out 0.1s, background 0.2s;
+}
+.hovicon.effect-service:after {
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: -1;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+.hovicon.effect-service:hover {
+    -webkit-transform: scale(0.93);
+    -moz-transform: scale(0.93);
+    -ms-transform: scale(0.93);
+    transform: scale(0.93);
+}
+
+.hovicon.effect-service:hover:after {
+    -webkit-animation: sonarEffect 1.3s ease-out 75ms;
+    -moz-animation: sonarEffect 1.3s ease-out 75ms;
+    animation: sonarEffect 1.3s ease-out 75ms;
+    text-decoration: none;
+}
+/*----------ed----------*/
+
+
+@-webkit-keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+        -webkit-transform: scale(1.5);
+        opacity: 0;
+    }
+}
+@-moz-keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+        -moz-transform: scale(1.5);
+        opacity: 0;
+    }
+}
+@keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #FBE9E7, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #E8EAF6, 0 0 0 10px rgba(255, 255, 255, 0.5);
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: none; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: white;
+    color: white;
+}
+
+.modal-body {
+  display: inline-block;
+  float: left;
+  padding-top: 5em;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: white;
+    color: white;
+}
+
+/*Modal features*/
+.mod_img{
+  float: left;
+  margin: 0px auto;
+  padding: 5vmin 3vmin;
+  width: 50vmin;
+}
+
+.mod_title{
+  color: black;
+  font-family: JoseL;
+  font-size: 5vmin;
+  text-transform: uppercase;
+}
+
+.mod_description{
+  padding-top: 1em;
+  padding-right: 1em;
+  line-height: 1.5em;
+  font-family: JoseL;
+  font-size: 2vmin;
+}
+
+
+
+.myBtn{
+  margin-top: 2%;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #000;
+  width: 25vmin;
+  color: white;
+  padding: 0.5em;
+  text-transform: uppercase;
+  font-family: JoseT;
+  font-size: 2.5vmin;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10vmin;
+  text-decoration: none;
+  transition-duration: 0.8s;
+}
+
+.myBtn:hover{
+  text-decoration: none;
+  color: green;
+  text-shadow: 0px 0px 4px green;
+  transition-duration: 0.8s;
+}
+
+/*------*/
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+
+
+/*----------MEDIA QUERIS----------*/
+
+/*@media (min-width: 992px){
+  .grid-social-3 {
+   display: block;
+  }
+
+}*/
+
+@media (max-width: 991px) { 
+
+  .mod_description{
+    padding-left: 5vmin;
+    font-size: 2vmin;
+  }
+  .modal-body{
+    padding-top: 10vmin;
+  }
+  .mod_title{
+    font-size: 3.5vmin;
+  }
+  .mod_img{
+    padding-left: 5vmin;
+    width: 60vmin;
+  }
+  .grid-social-3 {
+   display: block;
+  }
+}
+
+/*#####################################################*/
+@media (max-width: 768px) { 
+/*page1*/
+  .headline{
+    font-size: 6vh;
+  }
+
+  .sub-title{
+    color: white;
+    font-family: JoseL;
+    font-size: 3vmin;
+    text-align: center;
+    text-transform: none;
+  }
+
+  .mod_img{
+    padding-left: 5vmin;
+  }
+
+  .btn{
+    margin-top: 10%;
+    font-size: 2vmin;
+    height: 5vh;
+    width: 30vw;
+  }
+/*end*/
+
+/*page 2*/
+
+  .grid-col-1 .title{
+    margin-top: 5%;
+
+  }
+
+  .list-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+  }
+
+   .grid-col-5{
+ /*   margin-top: -10%;*/
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-col-5 img{
+    height: 20vmin;
+    width: 20vmin;
+  }
+/*end*/
+
+/*page 3*/
+  .mar-top-5{
+    margin-top: 20%;
+  }
+
+  .mod_img{
+    padding-top: 10vmin;
+    padding-left: 5vmin;
+    width: 60vmin;
+  }
+/*end*/
+
+/*page 4*/
+  .grid-col-1 li{
+    display: block;
+    text-align: left;
+
+  }
+
+  .grid-social-3 {
+   display: block;
+  }
+/*end*/
+
+/*########################################################*/
+@media (max-width: 575px){
+
+    li{
+    font-size: 3.5vmin;
+  }
+    .page-3{
+    background: url('../images/land3.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+  }
+  .grid-col-3{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-self: center;
+    width: 90%;
+    margin-top: -30%;
+  }
+
+ .mar-20{
+    margin-top: 10%;
+  }
+
+
+  .sub-title{
+    font-size: 4vmin;
+    text-align: center;
+  } 
+  /*page 3*/
+  .mar-top-5{
+    margin-top: -10%;
+    margin-left: 4%;
+  }
+    .mod_img{
+    padding-top: 10vmin;
+    padding-left: 5vmin;
+    width: 60vmin;
+  }
+  .grid-col-5{
+ /*   margin-top: -10%;*/
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-row-gap: 10px;
+  }
+
+  .grid-col-5 img{
+    margin-top: 20%;
+    height: 100px;
+    width: 100px;
+  }
+}
+/*########################################################*/
+@media (max-width: 350px){
+
+
+   .grid-col-5{
+ /*   margin-top: -10%;*/
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-col-5 img{
+    height: 20vmin;
+    width: 20vmin;
+  }
+
+
+  .modal{
+    padding-top: 0;
+    
+  }
+  .showcase{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-self: center;
+    text-align: center;
+  }
+
+  .showcase img{
+    justify-self: center;
+  }
+
+  .hovicon {
+    height: 10vmin;
+    width: 10vmin;
+  }
+
+  .contact-form .form-field {
+    margin-top: -3%;
+  }
+
+  .grid-col-1 ul li{
+    text-align: left;
+    margin-top: -5%;
+    margin-left: -10%;
+  }
+  .grid-social-3 img{
+    padding-left: 0.5em;
+    height: 7vmin;
+    width: 7vmin;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+/*--------------------------------*/
+
+
+
+

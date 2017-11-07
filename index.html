@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ecobeam - Affordable Solar Products</title>
+	<meta charset = "UTF-8">
+	<meta name = "author" content = "Sai.Charantimath@gmail.com">
+	<meta name = "viewport" content = "width=device-width, initilal-scale=1.0">
+	<meta name = "keywords" content = "ecobeam, belgaum, solar, pannels, akash sondur, low price, solar services, ecobeam.in, www.ecobeam.in, belagavi solar pannels, belagavi">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+			$( '.js-input' ).keyup(function() {
+				if( $(this).val() ) {
+				    $(this).addClass('not-empty');
+			  } else {
+			     $(this).removeClass('not-empty');
+			  }
+			});
+				var TxtType = function(el, toRotate, period) {
+		        this.toRotate = toRotate;
+		        this.el = el;
+		        this.loopNum = 0;
+		        this.period = parseInt(period, 10) || 2000;
+		        this.txt = '';
+		        this.tick();
+		        this.isDeleting = false;
+		    };
+
+		    TxtType.prototype.tick = function() {
+		        var i = this.loopNum % this.toRotate.length;
+		        var fullTxt = this.toRotate[i];
+
+		        if (this.isDeleting) {
+		        this.txt = fullTxt.substring(0, this.txt.length - 1);
+		        } else {
+		        this.txt = fullTxt.substring(0, this.txt.length + 1);
+		        }
+
+		        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+		        var that = this;
+		        var delta = 200 - Math.random() * 100;
+
+		        if (this.isDeleting) { delta /= 2; }
+
+		        if (!this.isDeleting && this.txt === fullTxt) {
+		        delta = this.period;
+		        this.isDeleting = true;
+		        } else if (this.isDeleting && this.txt === '') {
+		        this.isDeleting = false;
+		        this.loopNum++;
+		        delta = 500;
+		        }
+
+		        setTimeout(function() {
+		        that.tick();
+		        }, delta);
+		    };
+
+		    window.onload = function() {
+		        var elements = document.getElementsByClassName('typewrite');
+		        for (var i=0; i<elements.length; i++) {
+		            var toRotate = elements[i].getAttribute('data-type');
+		            var period = elements[i].getAttribute('data-period');
+		            if (toRotate) {
+		              new TxtType(elements[i], JSON.parse(toRotate), period);
+		            }
+		        }
+		        // INJECT CSS
+		        var css = document.createElement("style");
+		        css.type = "text/css";
+		        css.innerHTML = ".typewrite > .wrap {border-right: 0.0em solid #fff}";
+		        document.body.appendChild(css);
+		    };
+
+
+			// Get the modal
+			var modal = document.getElementById('myModal');
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("myBtn");
+
+			// Get the <span> element that closes the modal
+			var myBtn = document.getElementsByClassName("myBtn")[0];
+
+			// When the user clicks the button, open the modal 
+			btn.onclick = function() {
+			    modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			function closewindow() {    
+			    $.modal.close();
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			    if (event.target == modal) {
+			        modal.style.display = "none";
+			    }
+			}
+	</script>
+</head>
+<body>
+	<header>
+	</header>
+
+	<section class = "kontainer">
+		<div class = "full-page land-page">
+			<div class = "tint">
+				<img src="png/logo.png" alt = "logo.png" id="shadow">
+				<p class = "headline">Affordable Solar Products To<br>
+					<em>
+						<span class="typewrite glow" data-period="2000" data-type='[ " Power ", " Renew ", " Protect ", " Energize ", " Save ", " Optimize " ]'>
+						</span>
+					</em> 
+					 Your World
+				</p>
+				<center><button class = "btn mar-50"><a href = "#know-more">know more</a></button></center>
+			</div>
+		</div>
+	</section>
+
+	<section class = "kontainer" id = "know-more">
+		<div class = "full-page page-2">
+			<div class = "tint2">
+				<div class = "grid-col-1">
+					<p class = "title center-justify mar-top-5" >Why use solar?</p>
+					<p class = "sub-title" style = "margin-top: -1.5%;"> Quality never goes out of style</p>
+					
+					<div class = "grid-col-5">
+						<div class = "showcase">
+							<img src="png/uses_icon/money2.png" class = "showcase-img" id = "money" alt = "con1">
+							<p class = "showcase-title">Free energy</p>
+						</div>
+
+						<div class = "showcase">
+							<img src="png/uses_icon/foot-prints2.png" id = "foot-prints" alt = "con1">
+							<p class = "showcase-title">Reduction of carbon footprints</p>
+						</div>
+
+						<div class = "showcase">
+							<img src="png/uses_icon/power2.png" id = "solar" alt = "con1">
+							<p class = "showcase-title">Reduction of electricity bill</p>
+						</div>
+
+						<div class = "showcase">
+							<img src="png/uses_icon/tax2.png" id = "power" alt = "con1">
+							<p class = "showcase-title">Tax benefits</p>
+						</div>
+
+						<div class = "showcase">
+							<img src="png/uses_icon/tax2.png" id = "power" alt = "con1">
+							<p class = "showcase-title">Minimum Maintenance</p>
+						</div>
+
+						<div class = "showcase">
+							<img src="png/uses_icon/tax2.png" id = "power" alt = "con1">
+							<p class = "showcase-title">Low Payback Period</p>
+						</div>
+					</div>
+
+					<!-- <div class = "title center-justify">
+						<p>Your benifits</p>
+					</div>
+
+					<ul class = "list-item">
+						<li>&#9679;&nbsp;&nbsp; Depreciation </li>
+						<li>&#9679;&nbsp;&nbsp; Minimum maintenance </li>
+						<li>&#9679;&nbsp;&nbsp; Government Subsidy </li>
+						<li>&#9679;&nbsp;&nbsp; Additional  Incentives </li>
+						<li>&#9679;&nbsp;&nbsp; Low Payback Period </li>
+						<li>&#9679;&nbsp;&nbsp; And much more </li>
+						<!-- <li>&#9679;&nbsp;&nbsp; Low Payback Period </li>
+						<li>&#9679;&nbsp;&nbsp; Low Payback Period </li> -->
+					</ul> -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class = "kontainer">
+		<div class = "full-page page-3">
+			<div class = "tint">
+				<div class = "grid-col-1">
+					<div class = "title center-justify">
+						<p>services provided</p>
+					</div>
+				</div>
+
+				<div class = "grid-col-3 mar-top-5">
+					<div class = "showcase mar-20">
+						<a href = "#" data-toggle="modal" data-target="#consultation">
+							<i class="hovicon effect-consult"> </i>
+						</a>
+						<p class = "sub-title">Consultation</p>
+					</div>
+
+					<div class = "showcase mar-20">
+						<a href = "#" data-toggle="modal" data-target="#design">
+							<i class="hovicon effect-design"> </i>
+						</a>
+						<p class = "sub-title">Design</p>
+					</div>
+
+					<div class = "showcase mar-20">
+						<a href = "#" data-toggle="modal" data-target="#post-installation">
+							<i class="hovicon effect-service"> </i>
+						</a>
+						<p class = "sub-title">Post Installation</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Consultation Modal -->
+	<div id="consultation" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<div class="modal-body">
+				<img src="images/mod-consult.jpeg" class = "mod_img" alt = "img here">
+
+				<div class = "mod_description">
+					<p class = "mod_title center-justify">Consultation </p>
+
+					<p>Since solar rooftop solutions is a new trend in the market, we help people understand this concept by giving them precise information about the products we have, while comparing with the products that are in the market.Our consultation team would be happy to help you at any time as per your convenience.</p>
+					<button class = "myBtn" onclick="document.getElementById('consultation').style.display='none'"><a href="#contact"> Contact Us </a></button>
+
+				</div>
+			</div>
+			<div class = "modal-footer">
+				<span>&nbsp;</span>
+				<h2><br></h2>
+			</div>
+		</div>
+	</div>
+	<!-- Modal ends-->
+
+
+	<!-- Design Modal -->
+	<div id="design" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<div class="modal-body">
+				<img src="images/mod-design.jpeg" class = "mod_img" alt = "img here">
+
+				<div class = "mod_description">
+					<p class = "mod_title center-justify">design </p>
+					<p>The design of the setup, plays a very important role in the production of solar power. Proper solutions for all kinds of roofs makes the best out of the area you must install the PV System. Our dedicated team of young Architect’s will help you get the supreme solution for your roof.</p>
+					<button class = "myBtn" onclick="document.getElementById('design').style.display='none'"><a href="#contact"> Contact Us </a></button>
+
+				</div>
+			</div>
+			<div class = "modal-footer">
+				<span>&nbsp;</span>
+				<h2><br></h2>
+			</div>
+		</div>
+	</div>
+	<!-- Modal ends-->
+
+	<!-- Post-services Modal -->
+	<div id="post-installation" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<div class="modal-body">
+				<img src="images/mod-service.jpeg" class = "mod_img" alt = "img here">
+
+				<div class = "mod_description">
+					<p class = "mod_title center-justify">Post Installation </p>
+
+					<p>Post installation of the solar rooftop system, we provide two free services for the first year. After which the services will be charged for. Our technicians are available to inspect and constantly monitor the solar rooftops and ensure that they function smoothly.</p>
+					<button class = "myBtn" onclick="document.getElementById('post-service').style.display='none'"><a href="#contact"> Contact Us </a></button>
+
+				</div>
+			</div>
+			<div class = "modal-footer">
+				<span>&nbsp;</span>
+				<h2><br></h2>
+			</div>
+		</div>
+	</div>
+	<!-- Modal ends-->
+
+	<section class = "kontainer" id = "contact">
+		<div class = "full-page page-4">
+			<div class = "tint">
+				<div class = "grid-col-1">
+					<div class = "title center-justify">
+						<p> Power your world, <span class = "green-glow"><em>your way</em></span></p>
+						<p class = "sub-title" style = "margin-bottom: 15%"> Get in touch with us</p>
+					</div>
+				</div>
+
+				<div class = "grid-col-1">
+					<div class = "csenter-justify">
+						<center>
+							<form action="https://formspree.io/info@ecobeam.in" method="POST" id = "con-form" class="contact-form row small">
+						      <div class="form-field col x-50">
+						         <input id="name" class="input-text js-input" type="text" required>
+						         <label class="label" for="name">Name</label>
+						      </div>
+						      <div class="form-field col x-50">
+						         <input id="email" class="input-text js-input" type="email" name="_replyto" required>
+						         <label class="label" for="email">E-mail</label>
+						      </div>
+						      <div class="form-field col x-100">
+						      	<textarea name="message" class = "input-text js-input" id = "message" required></textarea>
+						         <label class="label" for="message">Message</label>
+						      </div>
+						      <div class="form-field col x-100 align-center">
+						         <input class="btn" type="submit" value="Submit">
+						      </div>
+						    </form>	
+					   </center>					
+					</div>
+					<ul>
+				   		<li>&#9679;&nbsp;&nbsp; Akash: +91 99644 11833 </li>
+				   		<li>&#9679;&nbsp;&nbsp; Sanket: +91 87624 37747 </li>
+				   		<li>&#9679;&nbsp;&nbsp; Shridhar: +91 96201 62520 </li>
+				   </ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class = "kontainer">
+		<div class = "grid-col-footer">
+			<div id = "about-us">
+				<p class = "title">About&nbsp;us</p>
+			</div>
+			
+			<div id = "strip"></div>
+
+			<div>
+				<p id = "quote">"The greatest threat to our Planet is the belief<br> that someone else will  <span class = "green-glow">SAVE IT</span>"<br><span id = "author"><cite>-Robert Swan</cite></span></p><br>
+
+				<p id = "description">The above statement instilled courage and hope into five young minds to establish a company which would provide solar solutions while collaborating with our end users and helping them to contribute towards a 'Renewable World'. With an ambition to attain a greener and an eco-friendly planet, we aim to promote renewable energy and make the world superior to the generations ahead.</p>
+			</div>
+
+			<div id = "social">
+				<div class = "grid-social-3">
+					<a href="https://www.facebook.com/ecobeam"><img src="png/fb.png" alt = "facebook.com"></a>
+					<a href="https://www.instagram.com/ecobeam"><img src="png/insta.png" alt = "Instagram.com"></a>
+					<a href="https://www.instagram.com"><img src="png/in.png" alt = "linkedin.com"></a>
+				</div>
+			</div>
+		</div>
+		
+		<center>
+			<p id = "dev">Developed by <span style = "text-shadow: 0px 0px 10px white; letter-spacing: 1vmin;"><a href = "https://www.facebook.com/meyendstudio" style = "text-decoration: none">THE MEYEND STUDIO</a></span> &#9679; <span style = "color: white">Ecobeam 2017 | All Rights Reserved</span></p>
+		</center>
+	</footer>
+</body>
+</html>
