@@ -13,98 +13,6 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script type="text/javascript">
-			$( '.js-input' ).keyup(function() {
-				if( $(this).val() ) {
-				    $(this).addClass('not-empty');
-			  } else {
-			     $(this).removeClass('not-empty');
-			  }
-			});
-				var TxtType = function(el, toRotate, period) {
-		        this.toRotate = toRotate;
-		        this.el = el;
-		        this.loopNum = 0;
-		        this.period = parseInt(period, 10) || 2000;
-		        this.txt = '';
-		        this.tick();
-		        this.isDeleting = false;
-		    };
-
-		    TxtType.prototype.tick = function() {
-		        var i = this.loopNum % this.toRotate.length;
-		        var fullTxt = this.toRotate[i];
-
-		        if (this.isDeleting) {
-		        this.txt = fullTxt.substring(0, this.txt.length - 1);
-		        } else {
-		        this.txt = fullTxt.substring(0, this.txt.length + 1);
-		        }
-
-		        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-		        var that = this;
-		        var delta = 200 - Math.random() * 100;
-
-		        if (this.isDeleting) { delta /= 2; }
-
-		        if (!this.isDeleting && this.txt === fullTxt) {
-		        delta = this.period;
-		        this.isDeleting = true;
-		        } else if (this.isDeleting && this.txt === '') {
-		        this.isDeleting = false;
-		        this.loopNum++;
-		        delta = 500;
-		        }
-
-		        setTimeout(function() {
-		        that.tick();
-		        }, delta);
-		    };
-
-		    window.onload = function() {
-		        var elements = document.getElementsByClassName('typewrite');
-		        for (var i=0; i<elements.length; i++) {
-		            var toRotate = elements[i].getAttribute('data-type');
-		            var period = elements[i].getAttribute('data-period');
-		            if (toRotate) {
-		              new TxtType(elements[i], JSON.parse(toRotate), period);
-		            }
-		        }
-		        // INJECT CSS
-		        var css = document.createElement("style");
-		        css.type = "text/css";
-		        css.innerHTML = ".typewrite > .wrap {border-right: 0.0em solid #fff}";
-		        document.body.appendChild(css);
-		    };
-
-
-			// Get the modal
-			var modal = document.getElementById('myModal');
-
-			// Get the button that opens the modal
-			var btn = document.getElementById("myBtn");
-
-			// Get the <span> element that closes the modal
-			var myBtn = document.getElementsByClassName("myBtn")[0];
-
-			// When the user clicks the button, open the modal 
-			btn.onclick = function() {
-			    modal.style.display = "block";
-			}
-
-			// When the user clicks on <span> (x), close the modal
-			function closewindow() {    
-			    $.modal.close();
-			}
-
-			// When the user clicks anywhere outside of the modal, close it
-			window.onclick = function(event) {
-			    if (event.target == modal) {
-			        modal.style.display = "none";
-			    }
-			}
-	</script>
 </head>
 <body>
 	<header>
@@ -118,7 +26,7 @@
 					<em>
 						<span class="typewrite glow" data-period="2000" data-type='[ " Power ", " Renew ", " Protect ", " Energize ", " Save ", " Optimize " ]'>
 						</span>
-					</em> 
+					</em>
 					 Your World
 				</p>
 				<center><button class = "btn mar-50"><a href = "#know-more">know more</a></button></center>
@@ -132,7 +40,7 @@
 				<div class = "grid-col-1">
 					<p class = "title center-justify mar-top-5" >Why use solar?</p>
 					<p class = "sub-title" style = "margin-top: -1.5%;"> Quality never goes out of style</p>
-					
+
 					<div class = "grid-col-5">
 						<div class = "showcase">
 							<img src="png/uses_icon/money2.png" class = "showcase-img" id = "money" alt = "con1">
@@ -155,30 +63,15 @@
 						</div>
 
 						<div class = "showcase">
-							<img src="png/uses_icon/tax2.png" id = "power" alt = "con1">
+							<img src="png/uses_icon/min-main.png" id = "power" alt = "con1">
 							<p class = "showcase-title">Minimum Maintenance</p>
 						</div>
 
 						<div class = "showcase">
-							<img src="png/uses_icon/tax2.png" id = "power" alt = "con1">
+							<img src="png/uses_icon/low-payback.png" id = "power" alt = "con1">
 							<p class = "showcase-title">Low Payback Period</p>
 						</div>
 					</div>
-
-					<!-- <div class = "title center-justify">
-						<p>Your benifits</p>
-					</div>
-
-					<ul class = "list-item">
-						<li>&#9679;&nbsp;&nbsp; Depreciation </li>
-						<li>&#9679;&nbsp;&nbsp; Minimum maintenance </li>
-						<li>&#9679;&nbsp;&nbsp; Government Subsidy </li>
-						<li>&#9679;&nbsp;&nbsp; Additional  Incentives </li>
-						<li>&#9679;&nbsp;&nbsp; Low Payback Period </li>
-						<li>&#9679;&nbsp;&nbsp; And much more </li>
-						<!-- <li>&#9679;&nbsp;&nbsp; Low Payback Period </li>
-						<li>&#9679;&nbsp;&nbsp; Low Payback Period </li> -->
-					</ul> -->
 				</div>
 			</div>
 		</div>
@@ -317,8 +210,8 @@
 						      <div class="form-field col x-100 align-center">
 						         <input class="btn" type="submit" value="Submit">
 						      </div>
-						    </form>	
-					   </center>					
+						    </form>
+					   </center>
 					</div>
 					<ul>
 				   		<li>&#9679;&nbsp;&nbsp; Akash: +91 99644 11833 </li>
@@ -335,7 +228,7 @@
 			<div id = "about-us">
 				<p class = "title">About&nbsp;us</p>
 			</div>
-			
+
 			<div id = "strip"></div>
 
 			<div>
@@ -352,10 +245,104 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<center>
 			<p id = "dev">Developed by <span style = "text-shadow: 0px 0px 10px white; letter-spacing: 1vmin;"><a href = "https://www.facebook.com/meyendstudio" style = "text-decoration: none">THE MEYEND STUDIO</a></span> &#9679; <span style = "color: white">Ecobeam 2017 | All Rights Reserved</span></p>
 		</center>
 	</footer>
+
+
+
+	<script type="text/javascript">
+			$( '.js-input' ).keyup(function() {
+				if( $(this).val() ) {
+				    $(this).addClass('not-empty');
+			  } else {
+			     $(this).removeClass('not-empty');
+			  }
+			});
+				var TxtType = function(el, toRotate, period) {
+		        this.toRotate = toRotate;
+		        this.el = el;
+		        this.loopNum = 0;
+		        this.period = parseInt(period, 10) || 2000;
+		        this.txt = '';
+		        this.tick();
+		        this.isDeleting = false;
+		    };
+
+		    TxtType.prototype.tick = function() {
+		        var i = this.loopNum % this.toRotate.length;
+		        var fullTxt = this.toRotate[i];
+
+		        if (this.isDeleting) {
+		        this.txt = fullTxt.substring(0, this.txt.length - 1);
+		        } else {
+		        this.txt = fullTxt.substring(0, this.txt.length + 1);
+		        }
+
+		        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+		        var that = this;
+		        var delta = 200 - Math.random() * 100;
+
+		        if (this.isDeleting) { delta /= 2; }
+
+		        if (!this.isDeleting && this.txt === fullTxt) {
+		        delta = this.period;
+		        this.isDeleting = true;
+		        } else if (this.isDeleting && this.txt === '') {
+		        this.isDeleting = false;
+		        this.loopNum++;
+		        delta = 500;
+		        }
+
+		        setTimeout(function() {
+		        that.tick();
+		        }, delta);
+		    };
+
+		    window.onload = function() {
+		        var elements = document.getElementsByClassName('typewrite');
+		        for (var i=0; i<elements.length; i++) {
+		            var toRotate = elements[i].getAttribute('data-type');
+		            var period = elements[i].getAttribute('data-period');
+		            if (toRotate) {
+		              new TxtType(elements[i], JSON.parse(toRotate), period);
+		            }
+		        }
+		        // INJECT CSS
+		        var css = document.createElement("style");
+		        css.type = "text/css";
+		        css.innerHTML = ".typewrite > .wrap {border-right: 0.0em solid #fff}";
+		        document.body.appendChild(css);
+		    };
+
+
+			// Get the modal
+			var modal = document.getElementById('myModal');
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("myBtn");
+
+			// Get the <span> element that closes the modal
+			var myBtn = document.getElementsByClassName("myBtn")[0];
+
+			// When the user clicks the button, open the modal
+			btn.onclick = function() {
+			    modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			function closewindow() {
+			    $.modal.close();
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			    if (event.target == modal) {
+			        modal.style.display = "none";
+			    }
+			}
 </body>
 </html>

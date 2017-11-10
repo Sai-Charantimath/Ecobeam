@@ -1,24 +1,24 @@
 /*----------GLOBAL----------*/
 body{
-	background-color: black;
-	margin: 0%;
-	font-family: JoseT;
-	overflow-X: hidden;
+  background-color: black;
+  margin: 0%;
+  font-family: JoseT;
+  overflow-X: hidden;
 }
 
 @font-face{
-	font-family: JoseT;
-	src: url(../fonts/JosefinSans-Thin.ttf);
+  font-family: JoseT;
+  src: url(../fonts/JosefinSans-Thin.ttf);
 }
 
 @font-face{
-	font-family: JoseL;
-	src: url(../fonts/JosefinSans-Light.ttf);
+  font-family: JoseL;
+  src: url(../fonts/JosefinSans-Light.ttf);
 }
 
 @font-face{
-	font-family: JoseR;
-	src: url(../fonts/JosefinSans-Regular.ttf);
+  font-family: JoseR;
+  src: url(../fonts/JosefinSans-Regular.ttf);
 }
 
 a:link {
@@ -46,17 +46,17 @@ a:active {
 }
 
 ul{
-	overflow: hidden;
-	margin: 0% auto;
+  overflow: hidden;
+  margin: 0% auto;
 }
 
 li{
-	padding: 0.5em;
-	display: inline-block;
-	color: white;
-	font-family: JoseL;
-	font-size: 2.5vmin;
-	text-align: left;
+  padding: 0.5em;
+  display: inline-block;
+  color: white;
+  font-family: JoseL;
+  font-size: 2.5vmin;
+  text-align: left;
 }
 
 /*-------------------------*/
@@ -65,47 +65,47 @@ li{
 /*----------ID's-----------*/
 
 #shadow{
-	margin: 2% 0 0 2%;
-	box-shadow: 1px 1px 8px 0px rgba(0, 255, 0, 0.2), 1px 1px 10px 0px rgba(255, 255, 255, 1);
+  margin: 2% 0 0 2%;
+  /*box-shadow: 1px 1px 8px 0px rgba(0, 255, 0, 0.2), 1px 1px 10px 0px rgba(255, 255, 255, 1);*/
 }
 
 #about-us{
 
-	justify-self: end;
-	align-self: end;
+  justify-self: end;
+  align-self: end;
 }
 
 #about-us p{
-	margin-left: -5%;
-	display: inline-block;
-	font-family: JoseR;
-	font-size: 5vmin;
-	color: white;
-	text-transform: uppercase;
-	writing-mode: tb-rl;
-	transform: rotateZ(180deg);
+  margin-left: -5%;
+  display: inline-block;
+  font-family: JoseR;
+  font-size: 5vmin;
+  color: white;
+  text-transform: uppercase;
+  writing-mode: tb-rl;
+  transform: rotateZ(180deg);
 }
 
 #quote{
-	color: white;
-	text-align: center;
-	font-size: 5vmin;
-	font-family: JoseR;
-	line-height: 5vmin;
+  color: white;
+  text-align: center;
+  font-size: 5vmin;
+  font-family: JoseR;
+  line-height: 5vmin;
 }
 
 #description{
-	color: white;
-	text-align: center;
-	font-family: JoseT;
-	font-size: 2.2vmin;
-	padding: 2em 5em;
+  color: white;
+  text-align: center;
+  font-family: JoseT;
+  font-size: 2.2vmin;
+  padding: 2em 5em;
 }
 
 #strip{
-	width: 0.5em;
-	background-color: green;
-	justify-self: end;
+  width: 0.5em;
+  background-color: green;
+  justify-self: end;
 }
 
 #short-strip{
@@ -114,22 +114,22 @@ li{
 }
 
 #author{
-	float: right;
-	margin-top: 0%;
-	margin-right: 5%;
-	font-size: 3vmin;
-	font-family: JoseT;
+  float: right;
+  margin-top: 0%;
+  margin-right: 5%;
+  font-size: 3vmin;
+  font-family: JoseT;
 }
 
 #social{
-	justify-self: end;
+  justify-self: end;
 }
 
 #dev{
-	letter-spacing: 0.4vmin;
-	padding-right: 0em;
-	color: white;
-	font-size: 2vmin;
+  letter-spacing: 0.4vmin;
+  padding-right: 0em;
+  color: white;
+  font-size: 2vmin;
 }
 
 
@@ -138,18 +138,18 @@ li{
 /*----------BACKGORUND IMAGES----------*/
 
 .land-page{
-	background: url('../images/solar-panels.jpg');
-	background-attachment: fixed;
+  background: url('../images/solar-panels.jpg');
+  background-attachment: fixed;
   background-position: center;
 }
 
 .page-2{
-	background: url('../images/use-solar.jpg');
+  background: url('../images/use-solar.jpg');
 }
 
 .page-3{
-	background: url('../images/land3.jpg');
-	background-attachment: fixed;
+  background: url('../images/land3.jpg');
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
 }
@@ -162,49 +162,49 @@ li{
 
 /*----------TITLES----------*/
 .headline{
-	color: white;
-	font-size: 7vh;
-	padding-top: 2em;
-	font-family: JoseT;
-	text-align: center;
-	text-transform: none;
+  color: white;
+  font-size: 7vh;
+  padding-top: 2em;
+  font-family: JoseT;
+  text-align: center;
+  text-transform: none;
 }
 
 .glow{
-	line-height: 150%;
-	font-size: 10vmin;
-	font-family: JoseR; 
-	text-shadow: 0px 0px 10px white;
-	text-transform: none;
+  line-height: 150%;
+  font-size: 10vmin;
+  font-family: JoseR;
+  text-shadow: 0px 0px 10px white;
+  text-transform: none;
 }
 
 .title{
-	color: white;
-	font-family: JoseL;
-	font-size: 5vmin;
-	text-transform: uppercase;
+  color: white;
+  font-family: JoseL;
+  font-size: 5vmin;
+  text-transform: uppercase;
 }
 
 .sub-title{
-	color: white;
-	font-family: JoseL;
-	font-size: 3vmin;
-	text-align: center;
-	text-transform: none;
+  color: white;
+  font-family: JoseL;
+  font-size: 3vmin;
+  text-align: center;
+  text-transform: none;
 }
 
 .gap-10{
-	margin:5%;
+  margin:5%;
 }
 .mar-0{
-	margin-bottom: 0%;
+  margin-bottom: 0%;
 }
 
 .mar-top-5{
-	margin-top: 5%
+  margin-top: 5%
 }
 .mar-20{
-	margin-top: 20%;
+  margin-top: 20%;
 }
 /*--------------------------*/
 
@@ -213,21 +213,21 @@ li{
 /*----------CLASSES----------*/
 
 .full-page{
-	background-size: cover;
-	height: 100vh;
+  background-size: cover;
+  height: 100vh;
 }
 
 .kontainer{
   margin: 0%;
-	display: grid;
-	grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
   grid-auto-rows: auto;
 }
 
 .tint{
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0,0.3));
-	background-size: cover;
-	height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0,0.4));
+  background-size: cover;
+  height: 100vh;
 }
 
 .tint2{
@@ -238,30 +238,30 @@ li{
 
 
 .tint > img{
-	height: 10vh;
+  height: 10vh;
 }
 
 
 .btn{
-	background-color: black;
-	color: white;
-	text-align: center;
-	font-family: JoseL;
-	font-size: 2.5vmin;
-	height: 5vmin;
-	width: 20vmin;
-	border: none;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: JoseL;
+  font-size: 2.5vmin;
+  height: 5vmin;
+  width: 20vmin;
+  border: none;
 }
 
 .center-justify{
-	justify-self: center;
+  justify-self: center;
 }
 
 
 .showcase{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-	justify-self: center;
+  justify-self: center;
 }
 
 .showcase img{
@@ -276,7 +276,8 @@ li{
 }
 
 .green-glow{
-	color: green; text-shadow: 0px 0px 2px green;
+  color: green;
+  text-shadow: 0px 0px 2px green;
 }
 
 
@@ -289,21 +290,21 @@ li{
 /*----------GRIDS----------*/
 
 .grid-col-1{
-	display: grid;
-	grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .grid-col-3{
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-column-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
 }
 
 .grid-col-5{
   margin: 5% 0%;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap-column: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap-column: 10px;
   grid-row-gap: 50px;
 }
 
@@ -314,18 +315,18 @@ li{
   grid-column-gap: 100px;
 }
 .grid-col-footer{
-	background-color: black;
-	display: grid;
-	grid-template-columns: 0.49fr 0.1fr 3fr 0.5fr;
-	grid-auto-rows: minmax(200px, auto);
-	margin-bottom: 3%;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 0.49fr 0.1fr 3fr 0.5fr;
+  grid-auto-rows: minmax(200px, auto);
+  margin-bottom: 3%;
 }
 
 .grid-social-3 {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-auto-rows: 50px;
-	grid-column-gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 50px;
+  grid-column-gap: 40px;
 }
 .grid-social-3 img{
   margin-top: 30%;
@@ -364,7 +365,7 @@ li{
 }
 
 .small{
-	width: 50%;
+  width: 50%;
 }
 
 .get-in-touch .title {
@@ -676,7 +677,7 @@ li{
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
+    from {top:-300px; opacity:0}
     to {top:0; opacity:1}
 }
 
@@ -756,7 +757,7 @@ li{
 /*------*/
 /* Add Animation */
 @-webkit-keyframes slideIn {
-    from {bottom: -300px; opacity: 0} 
+    from {bottom: -300px; opacity: 0}
     to {bottom: 0; opacity: 1}
 }
 
@@ -766,12 +767,12 @@ li{
 }
 
 @-webkit-keyframes fadeIn {
-    from {opacity: 0} 
+    from {opacity: 0}
     to {opacity: 1}
 }
 
 @keyframes fadeIn {
-    from {opacity: 0} 
+    from {opacity: 0}
     to {opacity: 1}
 }
 
@@ -786,7 +787,7 @@ li{
 
 }*/
 
-@media (max-width: 991px) { 
+@media (max-width: 991px) {
 
   .mod_description{
     padding-left: 5vmin;
@@ -808,7 +809,7 @@ li{
 }
 
 /*#####################################################*/
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
 /*page1*/
   .headline{
     font-size: 6vh;
@@ -911,7 +912,7 @@ li{
   .sub-title{
     font-size: 4vmin;
     text-align: center;
-  } 
+  }
   /*page 3*/
   .mar-top-5{
     margin-top: -10%;
@@ -953,7 +954,7 @@ li{
 
   .modal{
     padding-top: 0;
-    
+
   }
   .showcase{
     display: grid;
@@ -1002,9 +1003,5 @@ li{
 
 
 
- 
+
 /*--------------------------------*/
-
-
-
-
